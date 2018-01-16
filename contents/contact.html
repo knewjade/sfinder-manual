@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>コマンドについて &mdash; solution-finder 0.502 ドキュメント</title>
+  <title>連絡先 &mdash; solution-finder 0.502 ドキュメント</title>
   
 
   
@@ -26,18 +26,17 @@
 
   
   
-    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   
 
   
 
   
         <link rel="index" title="索引"
-              href="genindex.html"/>
-        <link rel="search" title="検索" href="search.html"/>
-    <link rel="top" title="solution-finder 0.502 ドキュメント" href="index.html"/>
-        <link rel="next" title="コマンド: percent" href="percent/main.html"/>
-        <link rel="prev" title="ミノの組み合わせ" href="patterns.html"/>
+              href="../genindex.html"/>
+        <link rel="search" title="検索" href="../search.html"/>
+    <link rel="top" title="solution-finder 0.502 ドキュメント" href="../index.html"/>
+        <link rel="prev" title="制限・注意・不具合情報" href="caution.html"/>
 <!-- Global Site Tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-93540402-3"></script>
 <script>
@@ -50,7 +49,7 @@
 
 
   
-  <script src="_static/js/modernizr.min.js"></script>
+  <script src="../_static/js/modernizr.min.js"></script>
 
 </head>
 
@@ -66,7 +65,7 @@
           
 
           
-            <a href="index.html" class="icon icon-home"> solution-finder
+            <a href="../index.html" class="icon icon-home"> solution-finder
           
 
           
@@ -76,7 +75,7 @@
 
           
 <div role="search">
-  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
@@ -128,13 +127,13 @@
 <li class="toctree-l2"><a class="reference internal" href="patterns.html#id8">サンプル: コマンド集</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">コマンドについて</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#id2">概要</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id3">サブコマンドについて</a></li>
+<li class="toctree-l1"><a class="reference internal" href="command.html">コマンドについて</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="command.html#id2">概要</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="command.html#id3">サブコマンドについて</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#id4">テト譜からオプションを指定する</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id5">オプションの優先順位</a></li>
+<li class="toctree-l2"><a class="reference internal" href="command.html#id4">テト譜からオプションを指定する</a></li>
+<li class="toctree-l2"><a class="reference internal" href="command.html#id5">オプションの優先順位</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="percent/main.html">コマンド: percent</a><ul>
@@ -236,7 +235,7 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="contact.html">連絡先</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">連絡先</a></li>
 </ul>
 
             
@@ -251,7 +250,7 @@
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="index.html">solution-finder</a>
+          <a href="../index.html">solution-finder</a>
         
       </nav>
 
@@ -279,15 +278,15 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="index.html">Docs</a> &raquo;</li>
+      <li><a href="../index.html">Docs</a> &raquo;</li>
         
-      <li>コマンドについて</li>
+      <li>連絡先</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/command.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/contents/contact.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -301,83 +300,18 @@
            <div itemprop="articleBody">
             
   <div class="section" id="id1">
-<h1>コマンドについて<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h1>
-<div class="section" id="id2">
-<h2>概要<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<p>このページでは、solution-finderを実行するためのコマンドについて説明します。</p>
-<p>solution-finderの実行は、基本的に次のようなコマンドで実行します。</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">java</span> <span class="o">-</span><span class="n">jar</span> <span class="n">sfinder</span><span class="o">.</span><span class="n">jar</span> <span class="o">&lt;</span><span class="n">command</span><span class="o">&gt;</span> <span class="p">[</span><span class="n">options</span><span class="p">]</span>
-</pre></div>
-</div>
-<p>このとき、&lt;command&gt;を必ず指定する必要があります。</p>
-<p>solution-finderでは、現在3つのコマンドが実装されており、それぞれ以下の処理を行います。</p>
-<table border="1" class="docutils">
-<colgroup>
-<col width="11%" />
-<col width="89%" />
-</colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head">&lt;command&gt;</th>
-<th class="head">処理内容</th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr class="row-even"><td>percent</td>
-<td>ある地形からパーフェクトできる確率を計算する</td>
-</tr>
-<tr class="row-odd"><td>path</td>
-<td>ある地形からパーフェクトまでの操作手順をすべて列挙する</td>
-</tr>
-<tr class="row-even"><td>util</td>
-<td>ユーティリティ群 （※ コマンドのあとにサブコマンドが続く。詳細は次節を参照）</td>
-</tr>
-</tbody>
-</table>
-<p>このコマンドごとにそれぞれオプションが用意されています。</p>
-<p>オプションの詳細は各コマンドに記載されていますので、そちらをご参照ください。</p>
+<h1>連絡先<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<p>twitter か github から 作者 (newjade) までご連絡ください</p>
 <ul class="simple">
-<li>TIPS<ul>
-<li><code class="docutils literal"><span class="pre">java</span> <span class="pre">-jar</span> <span class="pre">sfinder.jar</span> <span class="pre">-v</span></code> で、現在のバージョンを表示します</li>
-<li><code class="docutils literal"><span class="pre">java</span> <span class="pre">-jar</span> <span class="pre">sfinder.jar</span> <span class="pre">-h</span></code> で、Usage (現在の実装されているコマンド)を表示します</li>
-<li><code class="docutils literal"><span class="pre">java</span> <span class="pre">-jar</span> <span class="pre">sfinder.jar</span> <span class="pre">&lt;command&gt;</span> <span class="pre">-h</span></code> で、各オプションごとのUsage (使用できるオプション一覧)を表示します</li>
+<li>twitter &#64;1millim<ul>
+<li><a class="reference external" href="https://twitter.com/1millim">https://twitter.com/1millim</a></li>
+</ul>
+</li>
+<li>github &#64;solution-finder<ul>
+<li><a class="reference external" href="https://github.com/knewjade/solution-finder">https://github.com/knewjade/solution-finder</a></li>
 </ul>
 </li>
 </ul>
-<div class="section" id="id3">
-<h3>サブコマンドについて<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<p>utilコマンドについては、コマンドの下にサブコマンドを指定します。</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">java</span> <span class="o">-</span><span class="n">jar</span> <span class="n">sfinder</span><span class="o">.</span><span class="n">jar</span> <span class="n">util</span> <span class="o">&lt;</span><span class="n">sub</span><span class="o">-</span><span class="n">command</span><span class="o">&gt;</span> <span class="p">[</span><span class="n">options</span><span class="p">]</span>
-</pre></div>
-</div>
-<p>このとき、&lt;sub-command&gt;を必ず指定する必要があります。</p>
-<p>このコマンドごとにそれぞれオプションが用意されています。</p>
-<p>オプションの詳細は各コマンドに記載されていますので、そちらをご参照ください。</p>
-</div>
-</div>
-<div class="section" id="id4">
-<h2>テト譜からオプションを指定する<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<p>テト譜のコメント欄で、削除ライン数の横に上記のオプションを並べることで設定できます。</p>
-<p>例) 4ラインパフェで、パターンを*p4、ホールドなしで探索したい場合</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="mi">4</span> <span class="o">--</span><span class="n">patterns</span> <span class="o">*</span><span class="n">p4</span> <span class="o">--</span><span class="n">hold</span> <span class="n">avoid</span>
-</pre></div>
-</div>
-</div>
-<div class="section" id="id5">
-<h2>オプションの優先順位<a class="headerlink" href="#id5" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<p>コマンドラインやテト譜など、複数箇所で同一オプションを設定した場合、次の数字が小さい場所の値が優先されます。</p>
-<ol class="arabic simple">
-<li>コマンドライン引数 <code class="docutils literal"><span class="pre">sfinder.jar</span> <span class="pre">&lt;command&gt;</span> <span class="pre">[options]</span></code></li>
-<li>テト譜のコマンド</li>
-<li>フィールドファイル・パターンファイルの設定値</li>
-</ol>
-<ul class="simple">
-<li>TIPS<ul>
-<li>すべてのオプションをひとつの場所に書く必要はありません</li>
-<li>たとえば、フィールドの高さをテト譜に指定して、コマンドでパターンを指定することができる</li>
-</ul>
-</li>
-</ul>
-</div>
 </div>
 
 
@@ -390,10 +324,8 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="percent/main.html" class="btn btn-neutral float-right" title="コマンド: percent" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
-      
-        <a href="patterns.html" class="btn btn-neutral" title="ミノの組み合わせ" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="caution.html" class="btn btn-neutral" title="制限・注意・不具合情報" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -423,7 +355,7 @@
 
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:'./',
+            URL_ROOT:'../',
             VERSION:'0.502',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
@@ -431,16 +363,16 @@
             SOURCELINK_SUFFIX: '.txt'
         };
     </script>
-      <script type="text/javascript" src="_static/jquery.js"></script>
-      <script type="text/javascript" src="_static/underscore.js"></script>
-      <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="_static/translations.js"></script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/translations.js"></script>
 
   
 
   
   
-    <script type="text/javascript" src="_static/js/theme.js"></script>
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
   
 
   
