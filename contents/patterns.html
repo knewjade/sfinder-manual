@@ -340,6 +340,7 @@
 <ul class="simple">
 <li><code class="docutils literal"><span class="pre">I</span></code> : Iのみ : 1通り</li>
 <li><code class="docutils literal"><span class="pre">[SZLJ]</span></code> : SZJLから1つを選択 : 4通り</li>
+<li><code class="docutils literal"><span class="pre">[^TI]</span></code> : TI以外から1つを選択 : 5通り</li>
 <li><code class="docutils literal"><span class="pre">[SZLJ]p2</span></code> : SZLJから2つを選択する順列 : 12通り</li>
 <li><code class="docutils literal"><span class="pre">*</span></code> (アスタリスク) : [TIJLSZO]と同等 : 7通り</li>
 <li><code class="docutils literal"><span class="pre">*p3</span></code> : [TIJLSZO]p3と同等 : 7P3=210通り</li>
@@ -348,6 +349,24 @@
 </ul>
 <p><code class="docutils literal"><span class="pre">*</span></code> は [TIJLSZO] と同じように解釈されます。</p>
 <p><code class="docutils literal"><span class="pre">!</span></code> は 左側で指定したミノ （[] or *）を全て使う組み合わせとなります。[]の中をよく変更する場合に指定すると便利です。</p>
+<div class="admonition note">
+<p class="first admonition-title">注釈</p>
+<ul class="last simple">
+<li>要素を繋げるコンマは省略することもできます。</li>
+<li><code class="docutils literal"><span class="pre">T,</span> <span class="pre">I,</span> <span class="pre">O</span></code> →　<code class="docutils literal"><span class="pre">TIO</span></code></li>
+<li><code class="docutils literal"><span class="pre">S,</span> <span class="pre">Z,</span> <span class="pre">*p3</span></code> →　<code class="docutils literal"><span class="pre">SZ,</span> <span class="pre">*p3</span></code></li>
+</ul>
+</div>
+<div class="admonition attention">
+<p class="first admonition-title">注意</p>
+<p>Windowsのコマンドプロンプトで ^ をそのまま使用した場合、プログラムに入力することができません。
+その場合は、以下のように入力文字列を変更してください。</p>
+<ul class="simple">
+<li>ダブルクォーテーションで囲む　ex) <code class="docutils literal"><span class="pre">&quot;[^TI]&quot;</span></code></li>
+<li><code class="docutils literal"><span class="pre">^</span></code> を2つにする  ex) <code class="docutils literal"><span class="pre">[^^TI]</span></code></li>
+</ul>
+<p class="last">ちなみにPowerShellでは、そのまま利用することができます。</p>
+</div>
 </div>
 <div class="section" id="id5">
 <h2>書き方: パターンファイルの場合<a class="headerlink" href="#id5" title="このヘッドラインへのパーマリンク">¶</a></h2>
