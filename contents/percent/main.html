@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>コマンド: percent &mdash; solution-finder 0.502 ドキュメント</title>
+  <title>コマンド: percent &mdash; solution-finder 0.505 ドキュメント</title>
   
 
   
@@ -39,7 +39,7 @@
         <link rel="index" title="索引"
               href="../../genindex.html"/>
         <link rel="search" title="検索" href="../../search.html"/>
-    <link rel="top" title="solution-finder 0.502 ドキュメント" href="../../index.html"/>
+    <link rel="top" title="solution-finder 0.505 ドキュメント" href="../../index.html"/>
         <link rel="next" title="コマンド: path" href="../path/main.html"/>
         <link rel="prev" title="コマンドについて" href="../command.html"/>
 <!-- Global Site Tag (gtag.js) - Google Analytics -->
@@ -152,6 +152,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#p-patterns-default"><code class="docutils literal"><span class="pre">-p</span></code>, <code class="docutils literal"><span class="pre">--patterns</span></code> [default: なし]</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#c-clear-line-default-4"><code class="docutils literal"><span class="pre">-c</span></code>, <code class="docutils literal"><span class="pre">--clear-line</span></code> [default: 4]</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#d-drop-default-softdrop"><code class="docutils literal"><span class="pre">-d</span></code>, <code class="docutils literal"><span class="pre">--drop</span></code> [default: softdrop]</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#th-threads-default-1"><code class="docutils literal"><span class="pre">-th</span></code>, <code class="docutils literal"><span class="pre">--threads</span></code> [default: -1]</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#td-tree-depth-default-3"><code class="docutils literal"><span class="pre">-td</span></code>, <code class="docutils literal"><span class="pre">--tree-depth</span></code> [default: 3]</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#fc-failed-count-default-100"><code class="docutils literal"><span class="pre">-fc</span></code>, <code class="docutils literal"><span class="pre">--failed-count</span></code> [default: 100]</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#lp-log-path-default-output-last-output-txt"><code class="docutils literal"><span class="pre">-lp</span></code>, <code class="docutils literal"><span class="pre">--log-path</span></code> [default: output/last_output.txt]</a></li>
@@ -185,6 +186,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../path/main.html#l-max-layer-default-2"><code class="docutils literal"><span class="pre">-L</span></code>, <code class="docutils literal"><span class="pre">--max-layer</span></code> [default: 2]</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../path/main.html#r-reserved-default-false"><code class="docutils literal"><span class="pre">-r</span></code>, <code class="docutils literal"><span class="pre">--reserved</span></code> [default: false]</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../path/main.html#d-drop-default-soft"><code class="docutils literal"><span class="pre">-d</span></code>, <code class="docutils literal"><span class="pre">--drop</span></code> [default: soft]</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../path/main.html#th-threads-default-1"><code class="docutils literal"><span class="pre">-th</span></code>, <code class="docutils literal"><span class="pre">--threads</span></code> [default: -1]</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../path/main.html#cb-cached-bit-default-0"><code class="docutils literal"><span class="pre">-cb</span></code>, <code class="docutils literal"><span class="pre">--cached-bit</span></code> [default: 0]</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../path/main.html#o-output-base-default-output-path-txt"><code class="docutils literal"><span class="pre">-o</span></code>, <code class="docutils literal"><span class="pre">--output-base</span></code> [default: output/path.txt]</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../path/main.html#lp-log-path-default-output-last-output-txt"><code class="docutils literal"><span class="pre">-lp</span></code>, <code class="docutils literal"><span class="pre">--log-path</span></code> [default: output/last_output.txt]</a></li>
@@ -360,23 +362,27 @@
 <td><code class="docutils literal"><span class="pre">--drop</span></code></td>
 <td>softdrop</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">-td</span></code></td>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">-th</span></code></td>
+<td><code class="docutils literal"><span class="pre">--threads</span></code></td>
+<td>-1</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">-td</span></code></td>
 <td><code class="docutils literal"><span class="pre">--tree-depth</span></code></td>
 <td>3</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">-fc</span></code></td>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">-fc</span></code></td>
 <td><code class="docutils literal"><span class="pre">--failed-count</span></code></td>
 <td>100</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">-lp</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">-lp</span></code></td>
 <td><code class="docutils literal"><span class="pre">--log-path</span></code></td>
 <td>output/last_output.txt</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">-fp</span></code></td>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">-fp</span></code></td>
 <td><code class="docutils literal"><span class="pre">--field-path</span></code></td>
 <td>input/field.txt</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">-pp</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">-pp</span></code></td>
 <td><code class="docutils literal"><span class="pre">--patterns-path</span></code></td>
 <td>input/patterns.txt</td>
 </tr>
@@ -415,6 +421,12 @@
 <li>softdrop: ソフトドロップ＋回転入れ（制限なし）</li>
 <li>harddrop: ハードドロップのみ</li>
 </ul>
+</div>
+<div class="section" id="th-threads-default-1">
+<h3><code class="docutils literal"><span class="pre">-th</span></code>, <code class="docutils literal"><span class="pre">--threads</span></code> [default: -1]<a class="headerlink" href="#th-threads-default-1" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>探索時に使用するスレッド数を指定します。</p>
+<p><cite>1</cite> を指定したとき、シングルスレッドでの探索となります。</p>
+<p>もし、0以下を指定した場合は、自動的に「実行環境のコア数」を設定します。</p>
 </div>
 <div class="section" id="td-tree-depth-default-3">
 <h3><code class="docutils literal"><span class="pre">-td</span></code>, <code class="docutils literal"><span class="pre">--tree-depth</span></code> [default: 3]<a class="headerlink" href="#td-tree-depth-default-3" title="このヘッドラインへのパーマリンク">¶</a></h3>
@@ -583,6 +595,7 @@ done
         <dl>
             <dt>Tags</dt>
             <dd><a href="../../latest/contents/percent/main.html">latest</a></dd>
+            <dd><a href="../../v.505/contents/percent/main.html">v.505</a></dd>
         </dl>
     </div>
 </div>
@@ -593,7 +606,7 @@ done
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'0.502',
+            VERSION:'0.505',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
