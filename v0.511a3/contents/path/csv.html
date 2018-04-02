@@ -1,0 +1,759 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>key: none &mdash; solution-finder 0.506 ドキュメント</title>
+  
+
+  
+  
+  
+  
+    <link rel="canonical" href="https://github.com/knewjade/solution-finder/latest/contents/path/csv.html"/>
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/banner.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="索引"
+              href="../../genindex.html"/>
+        <link rel="search" title="検索" href="../../search.html"/>
+    <link rel="top" title="solution-finder 0.506 ドキュメント" href="../../index.html"/>
+        <link rel="up" title="コマンド: path" href="main.html"/>
+        <link rel="next" title="コマンド: setup (α版)" href="../setup/main.html"/>
+        <link rel="prev" title="コマンド: path" href="main.html"/>
+<!-- Global Site Tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-93540402-4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-93540402-4');
+</script>
+
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> solution-finder
+          
+
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">目次</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../quick_start.html">クイックスタート</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../quick_start.html#id2">初めての方</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../quick_start.html#windows">Windows</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../quick_start.html#mac">Mac</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../quick_start.html#id3">しっかりと利用したい方</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../quick_start.html#windows-bat">Windows (batをベースにオプションを変更する)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../quick_start.html#id4">Windows (コマンドラインから操作する)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../quick_start.html#id5">Mac</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../field.html">フィールドの指定</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../field.html#id2">概要</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../field.html#id3">書き方: テト譜の場合</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../field.html#id4">テト譜の入力方法</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../field.html#id5">書き方: フィールドファイルの場合</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../patterns.html">ミノの組み合わせ</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../patterns.html#id2">概要</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../patterns.html#id3">基本ルール</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../patterns.html#id4">要素ルール</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../patterns.html#id5">書き方: パターンファイルの場合</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../patterns.html#id6">書き方: テト譜の場合</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../patterns.html#id7">書き方: コマンドラインの場合</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../patterns.html#id8">サンプル: コマンド集</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../command.html">コマンドについて</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../command.html#id2">概要</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../command.html#id3">サブコマンドについて</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../command.html#id4">テト譜からオプションを指定する</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../command.html#id5">オプションの優先順位</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../percent/main.html">コマンド: percent</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../percent/main.html#id1">概要</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../percent/main.html#id2">基本コマンド</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../percent/main.html#id3">注意事項</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../percent/main.html#id4">オプション一覧</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../percent/main.html#h-hold-default-use"><code class="docutils literal"><span class="pre">-H</span></code>, <code class="docutils literal"><span class="pre">--hold</span></code> [default: use]</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../percent/main.html#t-tetfu-default"><code class="docutils literal"><span class="pre">-t</span></code>, <code class="docutils literal"><span class="pre">--tetfu</span></code> [default: なし]</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../percent/main.html#p-page-default-1"><code class="docutils literal"><span class="pre">-P</span></code>, <code class="docutils literal"><span class="pre">--page</span></code> [default: 1]</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../percent/main.html#p-patterns-default"><code class="docutils literal"><span class="pre">-p</span></code>, <code class="docutils literal"><span class="pre">--patterns</span></code> [default: なし]</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../percent/main.html#c-clear-line-default-4"><code class="docutils literal"><span class="pre">-c</span></code>, <code class="docutils literal"><span class="pre">--clear-line</span></code> [default: 4]</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../percent/main.html#d-drop-default-softdrop"><code class="docutils literal"><span class="pre">-d</span></code>, <code class="docutils literal"><span class="pre">--drop</span></code> [default: softdrop]</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../percent/main.html#th-threads-default-1"><code class="docutils literal"><span class="pre">-th</span></code>, <code class="docutils literal"><span class="pre">--threads</span></code> [default: -1]</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../percent/main.html#td-tree-depth-default-3"><code class="docutils literal"><span class="pre">-td</span></code>, <code class="docutils literal"><span class="pre">--tree-depth</span></code> [default: 3]</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../percent/main.html#fc-failed-count-default-100"><code class="docutils literal"><span class="pre">-fc</span></code>, <code class="docutils literal"><span class="pre">--failed-count</span></code> [default: 100]</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../percent/main.html#lp-log-path-default-output-last-output-txt"><code class="docutils literal"><span class="pre">-lp</span></code>, <code class="docutils literal"><span class="pre">--log-path</span></code> [default: output/last_output.txt]</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../percent/main.html#fp-field-path-default-input-field-txt"><code class="docutils literal"><span class="pre">-fp</span></code>, <code class="docutils literal"><span class="pre">--field-path</span></code> [default: input/field.txt]</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../percent/main.html#pp-patterns-path-default-input-patterns-txt"><code class="docutils literal"><span class="pre">-pp</span></code>, <code class="docutils literal"><span class="pre">--patterns-path</span></code> [default: input/patterns.txt]</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../percent/main.html#id5">出力画面のサンプル</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="main.html">コマンド: path</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="main.html#id1">概要</a></li>
+<li class="toctree-l2"><a class="reference internal" href="main.html#id2">基本コマンド</a></li>
+<li class="toctree-l2"><a class="reference internal" href="main.html#id3">出力フォーマット</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="main.html#csv">CSV形式</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">key: none</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#key-solution">key: solution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#key-pattern">key: pattern</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#key-use">key: use</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="main.html#id4">オプション一覧</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="main.html#h-hold-default-use"><code class="docutils literal"><span class="pre">-H</span></code>, <code class="docutils literal"><span class="pre">--hold</span></code> [default: use]</a></li>
+<li class="toctree-l3"><a class="reference internal" href="main.html#t-tetfu-default"><code class="docutils literal"><span class="pre">-t</span></code>, <code class="docutils literal"><span class="pre">--tetfu</span></code> [default: なし]</a></li>
+<li class="toctree-l3"><a class="reference internal" href="main.html#p-page-default-1"><code class="docutils literal"><span class="pre">-P</span></code>, <code class="docutils literal"><span class="pre">--page</span></code> [default: 1]</a></li>
+<li class="toctree-l3"><a class="reference internal" href="main.html#p-patterns-default"><code class="docutils literal"><span class="pre">-p</span></code>, <code class="docutils literal"><span class="pre">--patterns</span></code> [default: なし]</a></li>
+<li class="toctree-l3"><a class="reference internal" href="main.html#c-clear-line-default-4"><code class="docutils literal"><span class="pre">-c</span></code>, <code class="docutils literal"><span class="pre">--clear-line</span></code> [default: 4]</a></li>
+<li class="toctree-l3"><a class="reference internal" href="main.html#f-format-default-link"><code class="docutils literal"><span class="pre">-f</span></code>, <code class="docutils literal"><span class="pre">--format</span></code> [default: link]</a></li>
+<li class="toctree-l3"><a class="reference internal" href="main.html#k-key-default-none"><code class="docutils literal"><span class="pre">-k</span></code>, <code class="docutils literal"><span class="pre">--key</span></code> [default: none]</a></li>
+<li class="toctree-l3"><a class="reference internal" href="main.html#s-split-default-no"><code class="docutils literal"><span class="pre">-s</span></code>, <code class="docutils literal"><span class="pre">--split</span></code> [default: no]</a></li>
+<li class="toctree-l3"><a class="reference internal" href="main.html#l-max-layer-default-2"><code class="docutils literal"><span class="pre">-L</span></code>, <code class="docutils literal"><span class="pre">--max-layer</span></code> [default: 2]</a></li>
+<li class="toctree-l3"><a class="reference internal" href="main.html#r-reserved-default-false"><code class="docutils literal"><span class="pre">-r</span></code>, <code class="docutils literal"><span class="pre">--reserved</span></code> [default: false]</a></li>
+<li class="toctree-l3"><a class="reference internal" href="main.html#d-drop-default-soft"><code class="docutils literal"><span class="pre">-d</span></code>, <code class="docutils literal"><span class="pre">--drop</span></code> [default: soft]</a></li>
+<li class="toctree-l3"><a class="reference internal" href="main.html#th-threads-default-1"><code class="docutils literal"><span class="pre">-th</span></code>, <code class="docutils literal"><span class="pre">--threads</span></code> [default: -1]</a></li>
+<li class="toctree-l3"><a class="reference internal" href="main.html#cb-cached-bit-default-0"><code class="docutils literal"><span class="pre">-cb</span></code>, <code class="docutils literal"><span class="pre">--cached-bit</span></code> [default: 0]</a></li>
+<li class="toctree-l3"><a class="reference internal" href="main.html#o-output-base-default-output-path-txt"><code class="docutils literal"><span class="pre">-o</span></code>, <code class="docutils literal"><span class="pre">--output-base</span></code> [default: output/path.txt]</a></li>
+<li class="toctree-l3"><a class="reference internal" href="main.html#lp-log-path-default-output-last-output-txt"><code class="docutils literal"><span class="pre">-lp</span></code>, <code class="docutils literal"><span class="pre">--log-path</span></code> [default: output/last_output.txt]</a></li>
+<li class="toctree-l3"><a class="reference internal" href="main.html#fp-field-path-default-input-field-txt"><code class="docutils literal"><span class="pre">-fp</span></code>, <code class="docutils literal"><span class="pre">--field-path</span></code> [default: input/field.txt]</a></li>
+<li class="toctree-l3"><a class="reference internal" href="main.html#pp-patterns-path-default-input-patterns-txt"><code class="docutils literal"><span class="pre">-pp</span></code>, <code class="docutils literal"><span class="pre">--patterns-path</span></code> [default: input/patterns.txt]</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../setup/main.html">コマンド: setup (α版)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../setup/main.html#id1">概要</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../setup/main.html#id2">基本コマンド</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../setup/main.html#id3">フィールドの指定方法</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../setup/main.html#id4">フィールドファイルから入力するとき</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../setup/main.html#id5">テト譜から入力するとき</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../setup/main.html#id6">オプション一覧</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../setup/main.html#t-tetfu-default"><code class="docutils literal"><span class="pre">-t</span></code>, <code class="docutils literal"><span class="pre">--tetfu</span></code> [default: なし]</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../setup/main.html#p-page-default-1"><code class="docutils literal"><span class="pre">-P</span></code>, <code class="docutils literal"><span class="pre">--page</span></code> [default: 1]</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../setup/main.html#p-patterns-default"><code class="docutils literal"><span class="pre">-p</span></code>, <code class="docutils literal"><span class="pre">--patterns</span></code> [default: なし]</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../setup/main.html#f-fill-default"><code class="docutils literal"><span class="pre">-f</span></code>, <code class="docutils literal"><span class="pre">--fill</span></code> [default: なし]</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../setup/main.html#m-margin-default"><code class="docutils literal"><span class="pre">-m</span></code>, <code class="docutils literal"><span class="pre">--margin</span></code> [default: なし]</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../setup/main.html#l-line-default-1"><code class="docutils literal"><span class="pre">-l</span></code>, <code class="docutils literal"><span class="pre">--line</span></code> [default: -1]</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../setup/main.html#d-drop-default-softdrop"><code class="docutils literal"><span class="pre">-d</span></code>, <code class="docutils literal"><span class="pre">--drop</span></code> [default: softdrop]</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../setup/main.html#o-output-base-default-output-setup-html"><code class="docutils literal"><span class="pre">-o</span></code>, <code class="docutils literal"><span class="pre">--output-base</span></code> [default: output/setup.html]</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../setup/main.html#lp-log-path-default-output-last-output-txt"><code class="docutils literal"><span class="pre">-lp</span></code>, <code class="docutils literal"><span class="pre">--log-path</span></code> [default: output/last_output.txt]</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../setup/main.html#fp-field-path-default-input-field-txt"><code class="docutils literal"><span class="pre">-fp</span></code>, <code class="docutils literal"><span class="pre">--field-path</span></code> [default: input/field.txt]</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../setup/main.html#pp-patterns-path-default-input-patterns-txt"><code class="docutils literal"><span class="pre">-pp</span></code>, <code class="docutils literal"><span class="pre">--patterns-path</span></code> [default: input/patterns.txt]</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../util/main.html">コマンド: util</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../util/main.html#id1">概要</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../util/main.html#id2">サブコマンド一覧</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../util/fig.html">サブコマンド: util fig</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../util/fig.html#id1">概要</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../util/fig.html#id2">テト譜の指定方法</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../util/fig.html#id3">基本コマンド</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../util/fig.html#id4">オプション一覧</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../caution.html">制限・注意・不具合情報</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../caution.html#id2">このページについて</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../caution.html#percent">percent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../caution.html#path">path</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../contact.html">連絡先</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">solution-finder</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="main.html">コマンド: path</a> &raquo;</li>
+        
+      <li>key: none</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/contents/path/csv.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="key-none">
+<h1>key: none<a class="headerlink" href="#key-none" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<p>出力されるCSVファイルの1行につき、一連の操作手順を表現します。</p>
+<p>例)</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">J</span><span class="p">,</span><span class="n">R</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">;</span><span class="n">L</span><span class="p">,</span><span class="n">L</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">;</span><span class="n">O</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">0</span>
+</pre></div>
+</div>
+<p>このうち、4つごとに1つのミノを置く操作を表しています。そのため、この例では3つのミノを置く操作手順を表しています。</p>
+<p>例)</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">J</span><span class="p">,</span><span class="n">R</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span>
+</pre></div>
+</div>
+<p>この例では「ミノJを右回転させた状態で回転軸が(x=3,y=3)にくるように接着させる」ことを表しています。</p>
+<p>従って、この4つが表している操作は次のようになります。</p>
+<ul class="simple">
+<li><dl class="first docutils">
+<dt>1つめの要素 J: ミノの種類</dt>
+<dd><ul class="first last">
+<li>TIJLSZOのどれか。</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>2つめの要素 R: 回転方向</dt>
+<dd><ul class="first last">
+<li>0: 出現時の回転方向</li>
+<li>R: 右回転</li>
+<li>L: 左回転</li>
+<li>2: 裏向き (右回転2回 or 左回転2回)</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>3つめの要素 3: 回転軸のx座標</dt>
+<dd><ul class="first last">
+<li>最も左の列を 0 としたときの列番号</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>4つめの要素 3: 回転軸のy座標</dt>
+<dd><ul class="first last">
+<li>最も下の行を 0 としたときの行番号</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+<p>この4つの要素が1セットとして、必要な操作回数だけ右にセットが続きます。</p>
+</div>
+<div class="section" id="key-solution">
+<h1>key: solution<a class="headerlink" href="#key-solution" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<p>パフェ手順（地形）をキーして、それぞれの手順で対応できるツモを振り分けます。</p>
+<p>出力例) <code class="docutils literal"><span class="pre">path</span> <span class="pre">-t</span> <span class="pre">v115&#64;BhF8CeG8BeH8CeG8JeAgWDAqedBA</span> <span class="pre">-p</span> <span class="pre">*p4</span> <span class="pre">-f</span> <span class="pre">csv</span> <span class="pre">-k</span> <span class="pre">solution</span></code></p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>テト譜,使用ミノ,対応ツモ数 (対地形),対応ツモ数 (対パターン),ツモ (対地形),ツモ (対パターン)
+http://fumen.zui.jp/?v115@9gh0R4F8g0R4G8BtH8g0BtG8JeAgWDA6vzBA,JSZ,2,48,ZSJ;ZJS,JZSI;ZLJS;JZTS;SZJO;ZSLJ;ZSJI;ZSOJ;ZJSL;ZTSJ;SZLJ;SZJI;SZOJ;TZJS;IZJS;LZJS;ZISJ;ZSIJ;JZSL;OZJS;ZJLS;ZLSJ;ZJOS;SZIJ;ZJST;ZOJS;ZSJL;JZLS;ZSTJ;ZJIS;ZJSO;SZJL;JZOS;JZST;TZSJ;SZTJ;IZSJ;LZSJ;OZSJ;JZIS;JZSO;ZSJT;ZTJS;ZJSI;ZJTS;ZOSJ;SZJT;ZIJS;ZSJO
+</pre></div>
+</div>
+<p>各項目は、左から順に以下の通りです。
+以下の 例) は、上記の結果を基づいた説明になります。</p>
+<ul class="simple">
+<li><dl class="first docutils">
+<dt>テト譜</dt>
+<dd><ul class="first last">
+<li>パフェの手順（地形）を表すテト譜</li>
+<li><dl class="first docutils">
+<dt>例)</dt>
+<dd><ul class="first last">
+<li><code class="docutils literal"><span class="pre">http://fumen.zui.jp/?v115&#64;9gh0R4F8g0R4G8BtH8g0BtG8JeAgWDA6vzBA</span></code> その行の対象となるパフェ地形のテト譜リンク</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>使用ミノ</dt>
+<dd><ul class="first last">
+<li>その手順で使用するミノの組み合わせ</li>
+<li><dl class="first docutils">
+<dt>例)</dt>
+<dd><ul class="first last">
+<li><code class="docutils literal"><span class="pre">JSZ</span></code> JSZの3ミノを使ってパフェをする地形である</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>対応ツモ数 (対地形)</dt>
+<dd><ul class="first last">
+<li>その手順に持ち込むことができるツモの総数 (入力パターンには依存しません)</li>
+<li><dl class="first docutils">
+<dt>例)</dt>
+<dd><ul class="first last">
+<li><code class="docutils literal"><span class="pre">2</span></code> （入力パターンに関係なく）JSZの組み合わせでこのパフェができる順番は 2通り</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>対応ツモ数 (対パターン)</dt>
+<dd><ul class="first last">
+<li>すべての入力パターンの中で、その手順で対応できるツモの総数</li>
+<li><dl class="first docutils">
+<dt>例) 入力パターンが <code class="docutils literal"><span class="pre">*p4</span></code> で、ホールドありのとき</dt>
+<dd><ul class="first last">
+<li><code class="docutils literal"><span class="pre">48</span></code> 全7p4(840通り)の入力パターンのうち、ホールドを使うことで48通りのツモ順に対応できる</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>ツモ (対地形)</dt>
+<dd><ul class="first last">
+<li>「対応ツモ数 (対地形)」の一覧</li>
+<li><dl class="first docutils">
+<dt>例)</dt>
+<dd><ul class="first last">
+<li><code class="docutils literal"><span class="pre">ZSJ;ZJS</span></code> ZSJ か ZJS の順にミノを置いたときだけパフェできる</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>ツモ (対パターン)</dt>
+<dd><ul class="first last">
+<li>「対応ツモ数 (対パターン)」の一覧</li>
+<li><dl class="first docutils">
+<dt>例)</dt>
+<dd><ul class="first last">
+<li><code class="docutils literal"><span class="pre">JZSI;ZLJS;JZTS;...</span></code> 入力パターンに従ったパターンなので4ミノの組み合わせになっている</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="section" id="key-pattern">
+<h1>key: pattern<a class="headerlink" href="#key-pattern" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<p>ツモをキーして、それぞれのツモで対応できるパフェ手順を振り分けます。</p>
+<p>出力例) <code class="docutils literal"><span class="pre">path</span> <span class="pre">-t</span> <span class="pre">v115&#64;BhF8CeG8BeH8CeG8JeAgWDAqedBA</span> <span class="pre">-p</span> <span class="pre">*p4</span> <span class="pre">-f</span> <span class="pre">csv</span> <span class="pre">-k</span> <span class="pre">pattern</span></code></p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">ツモ</span><span class="p">,</span><span class="n">対応地形数</span><span class="p">,</span><span class="n">使用ミノ</span><span class="p">,</span><span class="n">未使用ミノ</span><span class="p">,</span><span class="n">テト譜</span>
+<span class="n">TJSI</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="n">TJS</span><span class="p">;</span><span class="n">TIJ</span><span class="p">,</span><span class="n">I</span><span class="p">;</span><span class="n">S</span><span class="p">,</span><span class="n">v115</span><span class="nd">@9gzhF8ywG8g0wwH8i0G8JeAgWDAqedBA</span><span class="p">;</span><span class="n">v115</span><span class="nd">@9gh0R4F8g0R4G8g0wwH8ywG8JeAgWDAUtfBA</span><span class="p">;</span><span class="n">v115</span><span class="nd">@9gh0R4F8ywG8g0wwH8g0R4G8JeAgWDA0vzBA</span><span class="p">;</span><span class="n">v115</span><span class="nd">@9gQ4ywF8R4wwG8g0Q4H8i0G8JeAgWDAKN2BA</span>
+</pre></div>
+</div>
+<p>なお、このCSV形式を選択した場合は、percentコマンドのようなパフェ成功確率がログ上に表示されます。</p>
+<p>ログ出力例)</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">perfect</span> <span class="n">clear</span> <span class="n">percent</span>
+  <span class="o">-&gt;</span> <span class="n">success</span> <span class="o">=</span> <span class="mf">61.19</span><span class="o">%</span> <span class="p">(</span><span class="mi">514</span><span class="o">/</span><span class="mi">840</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>各項目は、左から順に以下の通りです。
+以下の 例) は、上記の結果を基づいた説明になります。</p>
+<ul class="simple">
+<li><dl class="first docutils">
+<dt>ツモ</dt>
+<dd><ul class="first last">
+<li>入力パターンから生成されたツモ順</li>
+<li><dl class="first docutils">
+<dt>例)</dt>
+<dd><ul class="first last">
+<li><code class="docutils literal"><span class="pre">TJSI</span></code> その行の対象となるツモ順</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>対応地形数</dt>
+<dd><ul class="first last">
+<li>そのツモからパフェ可能な手順（地形）の総数</li>
+<li><dl class="first docutils">
+<dt>例)</dt>
+<dd><ul class="first last">
+<li><code class="docutils literal"><span class="pre">4</span></code> TJSIのツモを引いたとき、4つのパフェを作ることができる</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>使用ミノ</dt>
+<dd><ul class="first last">
+<li>パフェ可能なミノの組み合わせ一覧</li>
+<li><dl class="first docutils">
+<dt>例)</dt>
+<dd><ul class="first last">
+<li><code class="docutils literal"><span class="pre">TJS;TIJ</span></code> TJSIのうち、TJS と TIJ を使ったパフェが存在する</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>未使用ミノ</dt>
+<dd><ul class="first last">
+<li>パフェした後に残るミノの組み合わせ一覧</li>
+<li><dl class="first docutils">
+<dt>例)</dt>
+<dd><ul class="first last">
+<li><code class="docutils literal"><span class="pre">I;S</span></code> TJSIのうち、I (TJS使用時) と S (TIJ使用時) が残るパフェが存在する</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>テト譜</dt>
+<dd><ul class="first last">
+<li>「対応地形数」の一覧</li>
+<li><dl class="first docutils">
+<dt>例)</dt>
+<dd><ul class="first last">
+<li><code class="docutils literal"><span class="pre">v115&#64;9gzhF8ywG8g0wwH8i0G8JeAgWDAqedBA;...</span></code> 4つのパフェを表すテト譜のデータ</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="section" id="key-use">
+<h1>key: use<a class="headerlink" href="#key-use" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<p>使用ミノをキーして、それぞれのミノの組み合わせで対応できるツモやパフェ手順を振り分けます。</p>
+<p>出力例) <code class="docutils literal"><span class="pre">path</span> <span class="pre">-t</span> <span class="pre">v115&#64;BhF8CeG8BeH8CeG8JeAgWDAqedBA</span> <span class="pre">-p</span> <span class="pre">*p4</span> <span class="pre">-f</span> <span class="pre">csv</span> <span class="pre">-k</span> <span class="pre">use</span></code></p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">使用ミノ</span><span class="p">,</span><span class="n">対応地形数</span><span class="p">,</span><span class="n">対応ツモ数</span> <span class="p">(</span><span class="n">対パターン</span><span class="p">),</span><span class="n">テト譜</span><span class="p">,</span><span class="n">ツモ</span> <span class="p">(</span><span class="n">対パターン</span><span class="p">)</span>
+<span class="n">TIL</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">88</span><span class="p">,</span><span class="n">v115</span><span class="nd">@9gzhF8ilG8glwwH8ywG8JeAgWDA0SdBA</span><span class="p">;</span><span class="n">v115</span><span class="nd">@9gwhywF8whglwwG8whglH8whhlG8JeAgWDAM</span><span class="o">+</span><span class="mi">1</span><span class="n">BA</span><span class="p">,</span><span class="n">TZIL</span><span class="p">;</span><span class="n">LOTI</span><span class="p">;</span><span class="n">ILZT</span><span class="p">;</span><span class="n">TOIL</span><span class="p">;</span><span class="n">TLOI</span><span class="p">;</span><span class="n">LITJ</span><span class="p">;</span><span class="n">LTIS</span><span class="p">;</span><span class="n">LITO</span><span class="p">;</span><span class="n">ILTJ</span><span class="p">;</span><span class="n">ITLZ</span><span class="p">;</span><span class="n">ILTO</span><span class="p">;</span><span class="n">TLIS</span><span class="p">;</span><span class="n">LIJT</span><span class="p">;</span><span class="n">TILZ</span><span class="p">;</span><span class="n">LTSI</span><span class="p">;</span><span class="n">ILJT</span><span class="p">;</span><span class="n">ITZL</span><span class="p">;</span><span class="n">TLSI</span><span class="p">;</span><span class="n">TIZL</span><span class="p">;</span><span class="n">LIOT</span><span class="p">;</span><span class="n">ILOT</span><span class="p">;</span><span class="n">LTIJ</span><span class="p">;</span><span class="n">JITL</span><span class="p">;</span><span class="n">SITL</span><span class="p">;</span><span class="n">ZITL</span><span class="p">;</span><span class="n">OITL</span><span class="p">;</span><span class="n">LITZ</span><span class="p">;</span><span class="n">JTLI</span><span class="p">;</span><span class="n">LTIO</span><span class="p">;</span><span class="n">STLI</span><span class="p">;</span><span class="n">ZTLI</span><span class="p">;</span><span class="n">ITLS</span><span class="p">;</span><span class="n">OTLI</span><span class="p">;</span><span class="n">ILTZ</span><span class="p">;</span><span class="n">JLIT</span><span class="p">;</span><span class="n">ITJL</span><span class="p">;</span><span class="n">SLIT</span><span class="p">;</span><span class="n">TLIJ</span><span class="p">;</span><span class="n">ZLIT</span><span class="p">;</span><span class="n">IJTL</span><span class="p">;</span><span class="n">OLIT</span><span class="p">;</span><span class="n">TILS</span><span class="p">;</span><span class="n">LJIT</span><span class="p">;</span><span class="n">TIJL</span><span class="p">;</span><span class="n">TLIO</span><span class="p">;</span><span class="n">ISTL</span><span class="p">;</span><span class="n">LIST</span><span class="p">;</span><span class="n">LTZI</span><span class="p">;</span><span class="n">TJLI</span><span class="p">;</span><span class="n">LSIT</span><span class="p">;</span><span class="n">IZTL</span><span class="p">;</span><span class="n">ILST</span><span class="p">;</span><span class="n">ITOL</span><span class="p">;</span><span class="n">TSLI</span><span class="p">;</span><span class="n">LZIT</span><span class="p">;</span><span class="n">IOTL</span><span class="p">;</span><span class="n">TLZI</span><span class="p">;</span><span class="n">TIOL</span><span class="p">;</span><span class="n">TZLI</span><span class="p">;</span><span class="n">LOIT</span><span class="p">;</span><span class="n">JTIL</span><span class="p">;</span><span class="n">STIL</span><span class="p">;</span><span class="n">TOLI</span><span class="p">;</span><span class="n">ZTIL</span><span class="p">;</span><span class="n">LITS</span><span class="p">;</span><span class="n">OTIL</span><span class="p">;</span><span class="n">LTIZ</span><span class="p">;</span><span class="n">JLTI</span><span class="p">;</span><span class="n">ITLJ</span><span class="p">;</span><span class="n">SLTI</span><span class="p">;</span><span class="n">ZLTI</span><span class="p">;</span><span class="n">OLTI</span><span class="p">;</span><span class="n">ILTS</span><span class="p">;</span><span class="n">LTJI</span><span class="p">;</span><span class="n">ITLO</span><span class="p">;</span><span class="n">LJTI</span><span class="p">;</span><span class="n">TILJ</span><span class="p">;</span><span class="n">TLIZ</span><span class="p">;</span><span class="n">ITSL</span><span class="p">;</span><span class="n">TILO</span><span class="p">;</span><span class="n">TJIL</span><span class="p">;</span><span class="n">LSTI</span><span class="p">;</span><span class="n">TLJI</span><span class="p">;</span><span class="n">TISL</span><span class="p">;</span><span class="n">TSIL</span><span class="p">;</span><span class="n">LZTI</span><span class="p">;</span><span class="n">LIZT</span><span class="p">;</span><span class="n">LTOI</span>
+</pre></div>
+</div>
+<p>各項目は、左から順に以下の通りです。
+以下の 例) は、上記の結果を基づいた説明になります。</p>
+<ul class="simple">
+<li><dl class="first docutils">
+<dt>使用ミノ</dt>
+<dd><ul class="first last">
+<li>パフェ手順で使用するミノの組み合わせ</li>
+<li><dl class="first docutils">
+<dt>例)</dt>
+<dd><ul class="first last">
+<li><code class="docutils literal"><span class="pre">TIL</span></code> その行の対象となるミノの組み合わせ</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>対応地形数</dt>
+<dd><ul class="first last">
+<li>その手順に持ち込むことができるツモの総数 (入力パターンには依存しません)</li>
+<li><dl class="first docutils">
+<dt>例)</dt>
+<dd><ul class="first last">
+<li><code class="docutils literal"><span class="pre">2</span></code> （入力パターンに関係なく）TILの組み合わせでこのパフェができる順番は 2通り</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>対応ツモ数 (対パターン)</dt>
+<dd><ul class="first last">
+<li>すべての入力パターンの中で、その手順で対応できるツモの総数</li>
+<li><dl class="first docutils">
+<dt>例) 入力パターンが <code class="docutils literal"><span class="pre">*p4</span></code> で、ホールドありのとき</dt>
+<dd><ul class="first last">
+<li><code class="docutils literal"><span class="pre">88</span></code> 全7p4(=840通り)の入力パターンのうち、ホールドを使うことで88通りのツモ順に対応できる</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>テト譜</dt>
+<dd><ul class="first last">
+<li>「対応地形数」の一覧</li>
+<li><dl class="first docutils">
+<dt>例)</dt>
+<dd><ul class="first last">
+<li><code class="docutils literal"><span class="pre">v115&#64;9gzhF8ilG8glwwH8ywG8JeAgWDA0SdBA;...</span></code> 4つのパフェを表すテト譜のデータ</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>ツモ (対パターン)</dt>
+<dd><ul class="first last">
+<li>「対応ツモ数 (対パターン)」の一覧</li>
+<li><dl class="first docutils">
+<dt>例)</dt>
+<dd><ul class="first last">
+<li><code class="docutils literal"><span class="pre">TZIL;LOTI;ILZT;...</span></code> 入力パターンに従ったパターンなので4ミノの組み合わせになっている</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../setup/main.html" class="btn btn-neutral float-right" title="コマンド: setup (α版)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="main.html" class="btn btn-neutral" title="コマンド: path" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, newjade.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+        <span class="fa fa-book"> Other Versions</span>
+        v: v0.511a3
+        <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+        <dl>
+            <dt>Tags</dt>
+            <dd><a href="../../../v0.505/contents/path/csv.html">v0.505</a></dd>
+            <dd><a href="../../../v0.506/contents/path/csv.html">v0.506</a></dd>
+            <dd><a href="../../../v0.510/contents/path/csv.html">v0.510</a></dd>
+            <dd><a href="../../../v0.511a1/contents/path/csv.html">v0.511a1</a></dd>
+            <dd><a href="../../../v0.511a2/contents/path/csv.html">v0.511a2</a></dd>
+            <dd><a href="csv.html">v0.511a3</a></dd>
+            <dd><a href="../../../v0.511a5/contents/path/csv.html">v0.511a5</a></dd>
+        </dl>
+    </div>
+</div>
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'0.506',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="../../_static/translations.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
